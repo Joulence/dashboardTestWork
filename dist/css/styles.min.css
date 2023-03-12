@@ -6,8 +6,10 @@
   display: flex;
   align-items: center;
   gap: 11px;
+  padding: 0 0 65px 31px;
 }
 .side__name-title {
+  display: flex;
   gap: 4px;
 }
 .side__name-title h2 {
@@ -20,9 +22,25 @@
   align-self: self-end;
   font-weight: 500;
   font-size: 10px;
-  line-height: 15px;
+  line-height: 28px;
   letter-spacing: -0.01em;
   color: #838383;
+}
+.side__menu {
+  padding-left: 40px;
+}
+.side__menu-item {
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.side__menu-item span {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  color: #9197B3;
+  text-transform: capitalize;
 }
 
 * {
@@ -36,7 +54,7 @@ html {
 
 body {
   margin: 0;
-  max-width: 600px;
+  padding-top: 40px;
   font-family: "Poppins", sans-serif;
 }
 
