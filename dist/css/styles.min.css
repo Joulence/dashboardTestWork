@@ -144,6 +144,16 @@
 .main__inner-table .table-titles td {
   color: #B5B7C0;
 }
+.main__inner-table .table-titles td:first-child {
+  padding: 0 0 14px 38px;
+}
+.main__inner-pagination {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 41px 38px;
+}
 .main-search__customers h2 {
   font-weight: 600;
   font-size: 22px;
@@ -182,6 +192,28 @@
 }
 .main-search__search input:focus-visible {
   outline: none;
+}
+.main .status {
+  padding: 4px 12px;
+  border-radius: 4px;
+  width: 80px;
+  text-align: center;
+}
+.main .status.active {
+  background: rgba(22, 192, 152, 0.38);
+  border: 1px solid #00B087;
+  color: #008767;
+}
+.main .status.active::after {
+  content: "Active";
+}
+.main .status.inactive {
+  background: #FFC5C5;
+  border: 1px solid #DF0404;
+  color: #DF0404;
+}
+.main .status.inactive::after {
+  content: "Inactive";
 }
 
 * {

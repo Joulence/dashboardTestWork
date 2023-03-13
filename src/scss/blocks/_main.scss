@@ -35,11 +35,11 @@
                     font-size: 14px;
                     letter-spacing: -0.01em;
                     color: #292D32;
-                    // padding-left: 38px;
                 }
 
                 &-subjects {
                     position: relative;
+
                     td {
                         &:first-child {
                             padding: 24px 0 24px 38px;
@@ -63,9 +63,21 @@
 
                     td {
                         color: #B5B7C0;
+
+                        &:first-child {
+                            padding: 0 0 14px 38px;
+                        }
                     }
                 }
             }
+        }
+
+        &-pagination {
+            margin-top: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px 41px 38px;
         }
     }
 
@@ -116,6 +128,37 @@
                 &:focus-visible {
                     outline: none;
                 }
+            }
+        }
+    }
+
+    &-pagination {
+        &__text {}
+
+        &__pages {}
+    }
+
+    .status {
+        padding: 4px 12px;
+        border-radius: 4px;
+        width: 80px;
+        text-align: center;
+
+        &.active {
+            background: rgba(22, 192, 152, 0.38);
+            border: 1px solid #00B087;
+            color: #008767;
+            &::after {
+                content: 'Active';
+            }
+        }
+
+        &.inactive {
+            background: #FFC5C5;
+            border: 1px solid #DF0404;
+            color: #DF0404;
+            &::after {
+                content: 'Inactive';
             }
         }
     }
