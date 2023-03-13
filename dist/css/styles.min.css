@@ -5,6 +5,7 @@
 .side {
   position: relative;
   min-height: 500px;
+  padding-right: 36px;
 }
 .side__name {
   display: flex;
@@ -37,15 +38,15 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  min-width: 250px;
 }
 .side__menu-chevrone.active path {
   stroke: white;
 }
 .side__menu-item {
-  max-width: 250px;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 6px 8px 6px 12px;
   cursor: pointer;
   border-radius: 8px;
@@ -89,6 +90,17 @@
   color: #757575;
 }
 
+.main {
+  background: #FAFBFF;
+  width: 100%;
+  padding-left: 71px;
+}
+.main-title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+}
+
 * {
   padding: 0;
   box-sizing: border-box;
@@ -100,8 +112,8 @@ html {
 
 body {
   margin: 0;
-  padding-top: 40px;
   font-family: "Poppins", sans-serif;
+  display: flex;
 }
 
 h1,
@@ -129,4 +141,8 @@ a {
 ul {
   list-style: none;
   margin: 0;
+}
+
+.side, .main {
+  padding-top: 40px;
 }
