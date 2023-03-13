@@ -4,7 +4,6 @@
 */
 .side {
   position: relative;
-  min-height: 500px;
   padding-right: 36px;
 }
 .side__name {
@@ -75,7 +74,7 @@
   align-items: center;
   gap: 12px;
   position: absolute;
-  bottom: 0;
+  bottom: 76px;
 }
 .side__user-name {
   font-weight: 500;
@@ -107,6 +106,7 @@
   margin-right: 91px;
 }
 .main__inner-search {
+  margin-bottom: 40px;
   padding: 30px 53px 0 38px;
   display: flex;
   justify-content: space-between;
@@ -121,10 +121,25 @@
   font-size: 14px;
   letter-spacing: -0.01em;
   color: #292D32;
-  padding-left: 38px;
+}
+.main__inner-table .table-subjects {
+  position: relative;
+}
+.main__inner-table .table-subjects td:first-child {
+  padding: 24px 0 24px 38px;
+}
+.main__inner-table .table-subjects::after {
+  content: "";
+  position: absolute;
+  left: 25px;
+  bottom: 0;
+  height: 15px;
+  width: 95%;
+  border-bottom: 1px solid #EEEEEE;
 }
 .main__inner-table .table-titles {
   border-bottom: 1px solid #EEEEEE;
+  padding-bottom: 14px;
 }
 .main__inner-table .table-titles td {
   color: #B5B7C0;

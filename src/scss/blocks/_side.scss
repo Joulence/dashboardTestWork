@@ -1,6 +1,5 @@
 .side {
     position: relative;
-    min-height: 500px;
     padding-right: 36px;
 
     &__name {
@@ -92,7 +91,7 @@
         align-items: center;
         gap: 12px;
         position: absolute;
-        bottom: 0;
+        bottom: 76px;
 
         &-name {
             font-weight: 500;
