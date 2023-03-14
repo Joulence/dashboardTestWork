@@ -6,6 +6,12 @@
   position: relative;
   padding-right: 36px;
 }
+@media (max-width: 1224px) {
+  .side {
+    padding-right: 0;
+    width: 100%;
+  }
+}
 .side__name {
   display: flex;
   align-items: center;
@@ -39,8 +45,31 @@
   gap: 10px;
   min-width: 250px;
 }
+@media (max-width: 1224px) {
+  .side__menu-list {
+    flex-direction: row;
+    min-width: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 600px) {
+  .side__menu-list {
+    justify-content: center;
+  }
+}
+@media (max-width: 1224px) {
+  .side__menu-text {
+    display: none;
+  }
+}
 .side__menu-chevrone.active path {
   stroke: white;
+}
+@media (max-width: 1224px) {
+  .side__menu-chevrone {
+    display: none;
+  }
 }
 .side__menu-item {
   width: 100%;
@@ -49,6 +78,11 @@
   padding: 6px 14px 6px 12px;
   cursor: pointer;
   border-radius: 8px;
+}
+@media (max-width: 1224px) {
+  .side__menu-item {
+    width: auto;
+  }
 }
 .side__menu-item.active {
   background: #5932EA;
@@ -75,6 +109,12 @@
   gap: 12px;
   position: absolute;
   bottom: 10px;
+}
+@media (max-width: 1224px) {
+  .side__user {
+    position: relative;
+    margin-top: 30px;
+  }
 }
 .side__user-name {
   font-weight: 500;
@@ -242,10 +282,23 @@
   content: "Inactive";
 }
 
-.hidden {
-  display: none;
+@media (max-width: 1224px) {
+  .main__inner-search,
+  .main__inner-pagination {
+    flex-wrap: wrap;
+  }
 }
-
+@media (max-width: 500px) {
+  .main {
+    padding-left: 0px;
+  }
+  .main-menu {
+    margin-right: 0px;
+  }
+  .table-subjects td {
+    font-size: 12px;
+  }
+}
 #tb-left,
 #tb-right {
   cursor: pointer;
@@ -265,6 +318,33 @@
     display: none;
   }
 }
+@media (max-width: 1224px) {
+  .main__inner-search,
+  .main__inner-pagination,
+  .side {
+    flex-wrap: wrap;
+  }
+  .side__menu-list {
+    flex-direction: row;
+  }
+  .main {
+    padding-left: 20px;
+  }
+  .main-menu {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .main {
+    padding-left: 0px;
+  }
+  .main-menu {
+    margin-right: 0px;
+  }
+  .table-subjects td {
+    font-size: 12px;
+  }
+}
 * {
   padding: 0;
   box-sizing: border-box;
@@ -278,6 +358,11 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   display: flex;
+}
+@media (max-width: 1224px) {
+  body {
+    flex-wrap: wrap;
+  }
 }
 
 h1,

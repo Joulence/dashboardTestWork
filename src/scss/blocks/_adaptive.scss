@@ -1,7 +1,3 @@
-.hidden {
-    display: none;
-}
-
 #tb-left,
 #tb-right {
     cursor: pointer;
@@ -19,5 +15,40 @@
 @media (min-width: 1224px) {
     .arrows {
         display: none;
+    }
+}
+
+@media (max-width: 1224px) {
+
+    .main__inner-search,
+    .main__inner-pagination,
+    .side {
+        flex-wrap: wrap;
+    }
+
+    .side__menu-list {
+        flex-direction: row;
+    }
+
+    .main {
+        padding-left: 20px;
+        &-menu {
+            margin-right: 20px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .main {
+        padding-left: 0px;
+        &-menu {
+            margin-right: 0px;
+        }
+    }
+
+    .table-subjects {
+        td {
+            font-size: 12px;
+        }
     }
 }

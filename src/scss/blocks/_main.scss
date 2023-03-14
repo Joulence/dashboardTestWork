@@ -192,3 +192,27 @@
         }
     }
 }
+
+@media (max-width: 1224px) {
+
+    .main__inner-search,
+    .main__inner-pagination {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px) {
+    .main {
+        padding-left: 0px;
+
+        &-menu {
+            margin-right: 0px;
+        }
+    }
+
+    .table-subjects {
+        td {
+            font-size: 12px;
+        }
+    }
+}
