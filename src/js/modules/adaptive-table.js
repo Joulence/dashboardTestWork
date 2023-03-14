@@ -30,42 +30,52 @@ export function adaptive() {
         }
 
         right.addEventListener('click', () => {
-            if (currentPage <= 4) {
+            if (currentPage > 4) {
+                currentPage = 5;
+            } else {
                 currentPage++;
-                prevPage++;
             }
+        });
 
+        left.addEventListener('click', () => {
+            if (currentPage < 4) {
+                currentPage = 1;
+            } else {
+                currentPage--;
+            }
+        });
 
-            for (let i = 0; i < tr.length; i++) {
-                tr[i].children[1].style.display = 'none';
-                tr[i].children[2].style.display = 'none';
-                tr[i].children[3].style.display = 'none';
-                tr[i].children[4].style.display = 'none';
-                tr[i].children[5].style.display = 'none';
+        window.addEventListener('click', (event) => {
+            if (event.target == right || event.target == left) {
+                for (let i = 0; i < tr.length; i++) {
+                    tr[i].children[1].style.display = 'none';
+                    tr[i].children[2].style.display = 'none';
+                    tr[i].children[3].style.display = 'none';
+                    tr[i].children[4].style.display = 'none';
+                    tr[i].children[5].style.display = 'none';
 
-                switch (currentPage) {
-                    case 1:
-                        tr[i].children[currentPage].style.display = 'table-cell';
-                        break;
-                    case 2:
-                        tr[i].children[prevPage].style.display = 'none';
-                        tr[i].children[currentPage].style.display = 'table-cell';
-                        break;
+                    switch (currentPage) {
+                        case 1:
+                            tr[i].children[1].style.display = 'table-cell';
+                            break;
 
-                    case 3:
-                        tr[i].children[prevPage].style.display = 'none';
-                        tr[i].children[currentPage].style.display = 'table-cell';
-                        break;
+                        case 2:
+                            tr[i].children[2].style.display = 'table-cell';
+                            break;
 
-                    case 4:
-                        tr[i].children[prevPage].style.display = 'none';
-                        tr[i].children[currentPage].style.display = 'table-cell';
-                        break;
+                        case 3:
+                            tr[i].children[3].style.display = 'table-cell';
+                            break;
 
-                    case 5:
-                        tr[i].children[prevPage].style.display = 'none';
-                        tr[i].children[currentPage].style.display = 'table-cell';
-                        break;
+                        case 4:
+                            tr[i].children[4].style.display = 'table-cell';
+                            break;
+
+                        case 5:
+                            tr[i].children[5].style.display = 'table-cell';
+                            break;
+
+                    }
                 }
             }
         });
