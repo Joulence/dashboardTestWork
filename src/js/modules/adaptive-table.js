@@ -7,7 +7,6 @@ export function adaptive() {
     let tr = document.querySelectorAll('tr');
 
     let currentPage = 1;
-    let prevPage = 0;
 
     window.addEventListener('resize', () => {
         currentWidth = window.screen.width;
