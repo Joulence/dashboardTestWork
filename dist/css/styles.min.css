@@ -74,7 +74,7 @@
   align-items: center;
   gap: 12px;
   position: absolute;
-  bottom: 76px;
+  bottom: 10px;
 }
 .side__user-name {
   font-weight: 500;
@@ -143,9 +143,10 @@
 }
 .main__inner-table .table-titles td {
   color: #B5B7C0;
+  padding-bottom: 14px;
 }
 .main__inner-table .table-titles td:first-child {
-  padding: 0 0 14px 38px;
+  padding-left: 38px;
 }
 .main__inner-pagination {
   margin-top: 32px;

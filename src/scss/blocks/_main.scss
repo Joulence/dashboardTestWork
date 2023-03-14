@@ -64,8 +64,10 @@
                     td {
                         color: #B5B7C0;
 
+                        padding-bottom: 14px;
+
                         &:first-child {
-                            padding: 0 0 14px 38px;
+                            padding-left: 38px;
                         }
                     }
                 }
@@ -152,6 +154,7 @@
                 font-weight: 500;
                 font-size: 12px;
                 color: #404B52;
+
                 &.active-page {
                     background: #5932EA;
                     border: 1px solid #5932EA;
