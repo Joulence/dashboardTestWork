@@ -17,15 +17,11 @@ tr {
     cursor: pointer;
 }
 
-.arrow-available {
-    color: black;
-}
-
 .arrows {
     display: flex;
     justify-content: end;
     gap: 20px;
     font-size: 24px;
     padding-right: 38px;
-    color: grey;
+    color: black;
 }
