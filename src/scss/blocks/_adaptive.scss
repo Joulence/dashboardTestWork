@@ -2,16 +2,6 @@
     display: none;
 }
 
-tr {
-    &.table-adapt {
-        td {
-            /* &:nth-child(6), &:nth-child(5) {
-                display: none;
-            } */
-        }
-    }
-}
-
 #tb-left,
 #tb-right {
     cursor: pointer;
@@ -24,4 +14,10 @@ tr {
     font-size: 24px;
     padding-right: 38px;
     color: black;
+}
+
+@media (min-width: 1224px) {
+    .arrows {
+        display: none;
+    }
 }

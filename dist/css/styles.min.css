@@ -246,12 +246,6 @@
   display: none;
 }
 
-tr.table-adapt td {
-  /* &:nth-child(6), &:nth-child(5) {
-      display: none;
-  } */
-}
-
 #tb-left,
 #tb-right {
   cursor: pointer;
@@ -266,6 +260,11 @@ tr.table-adapt td {
   color: black;
 }
 
+@media (min-width: 1224px) {
+  .arrows {
+    display: none;
+  }
+}
 * {
   padding: 0;
   box-sizing: border-box;
