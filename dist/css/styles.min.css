@@ -242,6 +242,34 @@
   content: "Inactive";
 }
 
+.hidden {
+  display: none;
+}
+
+tr.table-adapt td {
+  /* &:nth-child(6), &:nth-child(5) {
+      display: none;
+  } */
+}
+
+#tb-left,
+#tb-right {
+  cursor: pointer;
+}
+
+.arrow-available {
+  color: black;
+}
+
+.arrows {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  font-size: 24px;
+  padding-right: 38px;
+  color: grey;
+}
+
 * {
   padding: 0;
   box-sizing: border-box;
